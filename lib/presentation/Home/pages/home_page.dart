@@ -61,13 +61,13 @@ class HomePage extends StatelessWidget {
               stream: database.getPostsStream(),
               builder: (context, snapshot) {
                 if (snapshot.connectionState == ConnectionState.waiting) {
-                  return Center(
+                  return const Center(
                     child: CircularProgressIndicator(),
                   );
                 }
                 final posts = snapshot.data!.docs;
 
-                if (snapshot.data == null || posts!.isEmpty) {
+                if (snapshot.data == null || posts.isEmpty) {
                   return const Center(
                     child: Text("No posts found"),
                   );

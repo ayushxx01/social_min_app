@@ -38,8 +38,8 @@ class ProfilePage extends StatelessWidget {
               return Center(
                 child: Column(
                   children: [
-                    Padding(
-                      padding: const EdgeInsets.only(top: 50, left: 25),
+                    const Padding(
+                      padding: EdgeInsets.only(top: 50, left: 25),
                       child: Row(
                         children: [
                           MyBackButton(),
@@ -62,14 +62,14 @@ class ProfilePage extends StatelessWidget {
                     Text(
                       user!['email'],
                       style:
-                          TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
+                          const TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
                     ),
 
                     const SizedBox(height: 10),
 
                     //email
                     Text(user['username'],
-                        style: TextStyle(
+                        style: const TextStyle(
                             fontSize: 24, fontWeight: FontWeight.bold)),
                   ],
                 ),

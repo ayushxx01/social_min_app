@@ -10,6 +10,7 @@ class MyPostButton extends StatelessWidget {
       onTap: () => onTap(),
       child: Container(
         decoration: BoxDecoration(
+          borderRadius: BorderRadius.circular(10), //ui change
           color: Theme.of(context).colorScheme.secondary,
         ),
         padding: const EdgeInsets.all(16),

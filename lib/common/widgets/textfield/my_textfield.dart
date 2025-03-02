@@ -19,7 +19,7 @@ class MyTextfield extends StatelessWidget {
             borderRadius: BorderRadius.circular(40),
           ),
           hintText: hintText),
-      obscureText: true,
+      obscureText: obscureText,
     );
   }
 }
